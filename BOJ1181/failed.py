@@ -1,7 +1,10 @@
 """
-보완할 점: 이중 포문 외의 더 빠르고 간결한 방법이 있을까 생각해보기 
-sol) -> (코드 리뷰 및 백준 풀이 탐구 후 내용 추가할 것)
+결과: 시간초과(sys 모듈 사용했는데도) + 중복 제거하지 못한 코드
+원인: 이중 포문, 중복 제거 x(문제 잘못 봄), 버블 정렬을 사용하기 때문에
+N이 커지면 일일이 해당 인덱스에서 끝까지 비교해야 함, 너무 느림
 """
+import sys
+input = sys.stdin.readline
 def swap(a,b):  
     """
     swap을 함수로 구현, 
@@ -16,7 +19,7 @@ def swap(a,b):
 N = int(input())
 li = []
 for i in range(N):
-    li.append(input())
+    li.append(input().rstrip())
 
 # 버블 정렬 활용
 for i in range(N-1):
