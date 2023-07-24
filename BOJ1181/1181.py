@@ -18,9 +18,9 @@ li = []
 for i in range(N):
     li.append(input())
 
-
+# 버블 정렬 활용
 for i in range(N-1):
-    for j in range(i+1, N):    # 버블 정렬 느낌
+    for j in range(i+1, N):    
         if len(li[i]) > len(li[j]):
             li[i], li[j] = swap(li[i], li[j])
         elif len(li[i]) == len(li[j]):
