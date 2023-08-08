@@ -18,3 +18,7 @@ for i in range(n+1):
     if k_nums[i] == 1:
         Sum += 1
 print(Sum-1) # index ==0 일 때 값(1)을 빼줌 
+
+# 참고
+# https://star7sss.tistory.com/129
+# https://star7sss.tistory.com/355
