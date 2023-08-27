@@ -98,3 +98,34 @@ for i in range(6):
         maxx = total
 
 print(maxx)
+
+
+# 2번 째 풀이 완료
+n = int(input())
+dic = {
+    0:5,
+    1:3,
+    2:4,
+    3:1,
+    4:2,
+    5:0
+}
+maxx = -1
+dices = [list(map(int,input().split())) for _ in range(n)]
+for i in range(6):
+    level = 0
+    ans = 0
+    s = dices[0][i]
+    e = dices[0][dic[i]]
+    while level < n-1:
+        ans += max(x for x in dices[level] if x not in (s,e))
+        for k in range(6):
+            if e == dices[level+1][k]:
+                s = e
+                e = dices[level+1][dic[k]]
+                level += 1
+                break 
+    ans += max(x for x in dices[level] if x not in (s,e))
+    if ans > maxx:
+        maxx = ans
+print(maxx)
