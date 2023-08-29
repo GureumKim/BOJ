@@ -2,7 +2,6 @@ import sys;input=sys.stdin.readline
 n, m = map(int,input().split())
 if n:       #상자에 들어갈 게 없을 때 처리
     weights = list(map(int,input().split()))
-    stack = []
     cnt = 1
     s = 0
     for w in weights:
