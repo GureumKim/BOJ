@@ -22,3 +22,9 @@ for i in range(1000,max_l-1,-1):
     max_h = max(max_h,height[i])
     ans += max_h
 print(ans)
+
+    
+
+        
+
+ 
