@@ -9,6 +9,7 @@ q = deque()
 ans = 0
 for _ in range(int(input())):
     s, e = map(int,input().split())
+    # 무방향 -> 양방향 처리 해줘야!!!!
     adj_lst[s].append(e)
     adj_lst[e].append(s)
 infected[1] = 1
