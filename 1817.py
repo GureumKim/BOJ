@@ -14,3 +14,4 @@ if n:       #상자에 들어갈 게 없을 때 처리
 else:
     print(0)
 # try & except 굳이 필요 없음..
+
