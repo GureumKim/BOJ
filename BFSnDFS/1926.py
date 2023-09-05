@@ -34,3 +34,4 @@ for i in range(n):
             num += 1
             check_size(i,j)
 print(num,"\n",mx,sep='')
+
