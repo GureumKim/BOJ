@@ -1,3 +1,6 @@
+"""
+시간 줄이는 핵심: 메모이제이션 이용
+"""
 import sys;input = sys.stdin.readline
 a,b = map(int,input().split())
 primes = [0,0]+[1]*(b-1)
