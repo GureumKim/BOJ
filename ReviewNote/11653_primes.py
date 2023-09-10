@@ -1,5 +1,5 @@
 n = int(input())
-for i in range(2,n+1):
+for i in range(2,int(n**0.5)+1):
     while not n%i:
         print(i)
         n //= i # 소수로 끝까지 나뉘게 된다.
