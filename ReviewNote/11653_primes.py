@@ -1,9 +1,21 @@
 n = int(input())
-for i in range(2,int(n**0.5)+1):
+for i in range(2,n+1):
     while not n%i:
         print(i)
         n //= i # 소수로 끝까지 나뉘게 된다.
     if n == 1: break # 2이상인 n은 결국 1이되게 됨 이 때 break
+
+# 복습 때 이 코드 분석하기
+n = int(input())
+i = 2
+while i * i <= n:
+    if n % i:
+        i += 1
+    else:
+        n //= i
+        print(i)
+if n > 1:
+    print(n)
 
 # 아래는 메모리 초과
 # 문제를 잘 읽고 조건을 확실히 파악한 다음
