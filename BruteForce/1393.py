@@ -27,3 +27,19 @@ mn = 21e8
 mx,my = 0,0
 bruteforce(ex,ey)
 print(mx,my)
+
+
+# 1837
+def check():
+    for i in range(2,k):
+        if primes[i] and p%i==0:
+            return i
+    return 1
+
+primes = [0,0]+[1]*int(1e6-1)
+for i in range(2,int(1e6**0.5)+1):
+    for j in range(2*i,int(1e6+1),i):
+        primes[j] = 0
+p, k = map(int,input().split())
+ans = check()
+print('GOOD') if ans == 1 else print('BAD', ans)
