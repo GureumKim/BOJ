@@ -1,6 +1,8 @@
 """
 한 번도 안치는 경우 생각!!
 + 문제 잘 읽기 조건!!! 끝나는 level 값이 어디인지!!!
+
+참고. https://www.acmicpc.net/board/view/39916
 """
 
 n = int(input())
