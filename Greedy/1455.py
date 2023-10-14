@@ -13,3 +13,5 @@ for j in range(m-1,-1,-1):
             shift(i,j)
             cnt += 1
 print(cnt)
+
+# **
